@@ -4,7 +4,7 @@ import os
 if os.path.isfile(".\profile.txt") and os.stat(".\profile.txt").st_size !=0:
     old_file= open(".\profile.txt","r+")
     data= json.loads(old_file.read())
-    print("Data age",data["age"],"____add age+1")
+    print("Data age is",data["age"],"____add age 1 to data current age")
     data["age"]=data["age"]+1
     print("Data new age is:", data["age"])
 
